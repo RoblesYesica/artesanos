@@ -6,26 +6,43 @@ import Button from 'react-bootstrap/Button';
 import './slider.css';
 
 
-function DarkVariantExample() {
-  return (
- 
-    <Carousel data-bs-theme="dark" style={{ width: '100%', height: '100%' }}>
-      <Carousel.Item>
+function Slider() {
+return (
+  <Carousel data-bs-theme="dark">
+    <Carousel.Item>
+
+                    
+      <img   src="/img/portada.jpg"
+               alt="Sec slide"
+               style={{ width: '100%', height: '400px' }}       
+                     />
+                       
+             
+
+      
+      <Carousel.Caption>
+      
+      </Carousel.Caption>
+    </Carousel.Item>
+    <Carousel.Item>
+    
+        
         <img
-          className="d-block w-100 "
-          src="/img/img7.jpg"
-          alt="First slide"
+          className=" d-block w-100 " 
+          src="/img/fondo.jpg"
+          alt="Second slide"
           style={{ width: '100%', height: '400px' }}
         />
-       
-        <Carousel.Caption >
+
+           
       
-            <Container>
+      <Carousel.Caption>
+      <Container>
                  <Row>
                     <Col>
                     <div align="left">
                        <h5>Nombre del nuevo producto</h5>
-                       <p>Descripcion del producto
+                        <p>Descripcion del producto
                           es una obra de escultura, especialmente en madera.
                           La madera se talla mediante un proceso de desgaste
                           y pulido, con el propósito de darle una forma
@@ -40,44 +57,17 @@ function DarkVariantExample() {
                       <div className="imagen-animacion">                     
                          <img  src="/img/img4.jpg"
                          alt="Second slide"
+                        
                           />
                        
                       </div>
                     </Col>
                  </Row>
     </Container>
-        </Carousel.Caption>
-       
-      </Carousel.Item>
-      <Carousel.Item >
-        <img
-          className="d-block w-100"
-          src="/img/img7.jpg"
-          alt="Second slide"
-          style={{ width: '100%', height: '400px' }}
-        />
-        <Carousel.Caption >
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item >
-        <img
-          className="d-block w-100 "
-          src="/img/img7.jpg"
-          alt="Third slide"
-          style={{ width: '100%', height: '400px' }}
-        />
-        <Carousel.Caption>
-          <h5>Third slide label</h5>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
-  
-  );
+      </Carousel.Caption>
+    </Carousel.Item>
+   
+  </Carousel>
+);
 }
-
-export default DarkVariantExample;
+export default Slider;
